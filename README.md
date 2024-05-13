@@ -13,5 +13,3 @@ Welcome to the C# Documentation project! This repository contains comprehensive 
 To get started with this documentation, clone the repository to your local machine:
 ```bash
 git clone https://github.com/yourusername/csharp-documentation.git
-
-![C# Logo](C# Logo.png)
