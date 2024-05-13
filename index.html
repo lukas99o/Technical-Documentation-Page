@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>C# Documentation</h1>
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#section-one">Introduction</a></li>
+            <li><a class="nav-link" href="#section-two">What you should already know</a></li>
+            <li><a class="nav-link" href="#section-three">C#, C and C++</a></li>
+            <li><a class="nav-link" href="#section-four">Hello World!</a></li>
+            <li><a class="nav-link" href="#section-five">Variables</a></li>
+            <li><a class="nav-link" href="#section-six">Declaring Variables</a></li>
+            <li><a class="nav-link" href="#section-seven">Variable Scope</a></li>
+            <li><a class="nav-link" href="#section-eight">Variable Lifetime</a></li>
+            <li><a class="nav-link" href="#section-nine">Access Modifiers</a></li>
+            <li><a class="nav-link" href="#section-ten">Data Types</a></li>
+            <li><a class="nav-link" href="#section-eleven">if...else statement</a></li>
+            <li><a class="nav-link" href="#section-twelve">while statement</a></li>
+            <li><a class="nav-link" href="#section-thirteen">for loop</a></li>
+            <li><a class="nav-link" href="#section-fourteen">Function Declarations</a></li>
+            <li><a class="nav-link" href="#section-fifteen">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="section-one" class="main-section">
+            <header>
+                <h1>Introduction to C# Programming</h2>
+            </header>
+            <p>
+                C# is a versatile and type-safe programming language developed by Microsoft that runs on the .NET Framework. It combines the robustness of C++ with the advanced features of modern programming languages. C# is used for developing desktop, web, and mobile applications, and is particularly powerful for creating Windows applications. Its syntax is object-oriented and easy to learn, especially for those familiar with C, C++, or Java. This introduction covers basic setup, key features, and the application scope of C#. Learn C# to build interactive and efficient applications across various platforms.
+            </p>
+        </section>
+
+        <section id="section-two" class="main-section">
+            <h1>Prerequisites for Learning C#</h1>
+            <p>
+                Before diving into C#, it's beneficial to have a basic understanding of computer programming concepts such as variables, control structures, and data types. Familiarity with object-oriented programming principles like classes, objects, inheritance, and polymorphism is advantageous. Knowledge of other C-family languages (such as C, C++, or Java) can ease the learning curve, as many syntactical elements are similar. A grasp of fundamental software development environments and tools will also help streamline the learning process.
+            </p>
+        </section>
+
+        <section id="section-three" class="main-section">
+            <h1>Comparing C#, C and C++</h1>
+            <p>
+                C#, C, and C++ are all part of the C language family, each serving unique roles in the world of programming. C, developed in the early 1970s by Dennis Ritchie, is one of the oldest and most influential programming languages. It is procedural, widely used for system programming and embedded systems due to its low-level capabilities and efficiency.
+            </p>
+            <p>
+                C++, developed by Bjarne Stroustrup in the 1980s, extends C by adding object-oriented features like classes, inheritance, and polymorphism, making it suitable for large-scale software development that requires data abstraction and manipulation. C++ maintains the essence of C, allowing direct manipulation of hardware resources while providing tools for higher-level programming.
+            </p>
+            <p>
+                C#, introduced by Microsoft in 2000, is a more modern language designed specifically for the .NET framework. It simplifies programming through its automatic memory management and rich class libraries. C# is inherently object-oriented and is used predominantly for developing Windows applications, web applications, and services. It provides features like delegates, events, and properties, making it highly suitable for component-oriented programming.
+            </p>
+            <p>
+                While each language has its distinct use cases, they share a syntactical base that provides a common framework for understanding. However, C# and C++ offer more robust tools for complex application development compared to the more straightforward, hardware-near approach of C.
+            </p>
+        </section>
+
+        <section id="section-four" class="main-section">
+            <h1>Create Your First C# Program: Hello World!</h1>
+            <p>
+                To start with C#, install Visual Studio. Create a new Console App project and open Program.cs. Replace the existing code with:
+            </p>
+            <code>
+                using System;<br>
+                class HelloWorld<br>
+                {<br>
+                    static void Main()<br>
+                    {<br>
+                        Console.WriteLine("Hello World!");<br>
+                    }<br>
+                }
+            </code>
+            <p>Build and run the application to see "Hello World!" in the console.</p>
+        </section>
+
+        <section id="section-five" class="main-section">
+            <h1>C# Variables</h1>
+            <p>
+                Variables in C# are used to store data that can be modified during program execution. Declaring a variable involves specifying a type followed by a name. C# is strongly-typed, so each variable's type must be defined. Common types include <code>int</code> for integers, <code>string</code> for text, and <code>bool</code> for boolean values. For example:
+            </p>
+            <code>
+                int age = 30;<br>
+                string name = "Alice";<br>
+                bool isEmployed = true;
+            </code>
+            <p>
+                Variables declared with <code>var</code> enable type inference, where the compiler determines the type based on the assigned value, simplifying code without losing the benefits of strong typing.
+            </p>
+        </section>
+
+        <section id="section-six" class="main-section">
+            <h1>Declaring Variables in C#</h1>
+            <p>
+                In C#, declaring variables requires you to specify the type and the identifier. This strongly typed nature ensures code clarity and integrity. Here’s how you declare variables:
+            </p>
+            <code>
+                int age = 25; // Declares an integer variable<br>
+                double height = 5.8; // Declares a double variable<br>
+                char grade = 'A'; // Declares a character variable<br>
+                string firstName = "John"; // Declares a string variable
+            </code>
+            <p>
+                The <code>var</code> keyword can also be used when the variable type is obvious from the right side of the declaration. This leads to cleaner and more readable code, especially when dealing with complex types.
+            </p>
+            <code>
+                var lastName = "Doe"; // The compiler infers the type as string<br>
+                var score = 99.5; // The compiler infers the type as double
+            </code>
+        </section>
+
+        <section id="section-seven" class="main-section">
+            <h1>Understanding Variable Scope in C#</h1>
+            <p>
+                In C#, the scope of a variable determines where it is accessible within the code. Variable scope is crucial for managing data accessibility and preventing unintended modifications. There are mainly two types of scopes:
+            </p>
+            <ul>
+                <li><strong>Local Scope:</strong> Variables declared inside a method or block are local to that method. They cannot be accessed outside of that block. For example:
+                    <code>
+                        void Calculate()
+                        {
+                            int localNumber = 5; // Local scope
+                        }
+                    </code>
+                    Here, <code>localNumber</code> is only accessible within the <code>Calculate</code> method.
+                </li>
+                <li><strong>Global Scope:</strong> Variables declared outside of any method but within a class are accessible by all methods within the class. These are often referred to as class-level or field variables. For example:
+                    <code>
+                        public class Calculator
+                        {
+                            int globalNumber = 10; // Class scope
+                        }
+                    </code>
+                    <code>globalNumber</code> can be accessed by any method within the <code>Calculator</code> class.
+                </li>
+            </ul>
+            <p>
+                Understanding and using variable scope effectively can help in creating reliable and maintainable code by controlling how and where data is accessed throughout your program.
+            </p>
+        </section>
+
+        <section id="section-eight" class="main-section">
+            <h1>Variable Lifetime in C#</h1>
+            <p>
+                The lifetime of a variable in C# refers to the duration for which the variable exists in memory while the program is running. Local variables have their lifetime tied to the execution of the block or method in which they are declared. They are created when their containing block begins execution and are destroyed once it ends. This management is crucial for efficient memory use, especially in applications that handle large amounts of data or interact with system resources.
+            </p>
+            <code>
+                void ExampleMethod()
+                {
+                    int localExample = 10; // Lifetime starts when ExampleMethod is called
+                } // Lifetime ends when ExampleMethod execution is complete
+            </code>
+        </section>
+
+        <section id="section-nine" class="main-section">
+            <h1>Access Modifiers  in C#</h1>
+            <p>
+                Access modifiers in C# control the visibility of variables and methods to other parts of a program. The most common modifiers are:
+                <ul>
+                    <li><strong>public</strong> - No restrictions on access level.</li>
+                    <li><strong>private</strong> - Accessible only within the class it is declared.</li>
+                    <li><strong>protected</strong> - Accessible within its class and by derived class instances.</li>
+                    <li><strong>internal</strong> - Accessible only within its own assembly, but not from another assembly.</li>
+                </ul>
+                Proper use of access modifiers enhances encapsulation, ensuring that internal details of a class are hidden from unwanted access, which is a key principle in secure and robust software design.
+            </p>
+            <code>
+                public class Car
+                {
+                    private int _speed; // Only accessible within the Car class
+                    protected int _mileage; // Accessible within Car and derived classes
+                    internal string _name; // Accessible within the same assembly
+                    public void DisplayInfo()
+                    {
+                        Console.WriteLine("Speed: " + _speed); // Accessible within any context
+                    }
+                }
+            </code>
+        </section>
+
+        <section id="section-ten" class="main-section">
+            <h1>Data Types in C#</h1>
+            <p>
+                C# offers a rich set of built-in data types within the System namespace, which form the foundation of data manipulation in any C# application. These types can be broadly categorized into two groups: value types and reference types. Value types include basic types like <code>int</code>, <code>double</code>, <code>float</code>, <code>bool</code>, and <code>char</code>. Reference types include <code>string</code> and all types that derive from <code>System.Object</code>. C# also supports complex structures and user-defined types via <code>struct</code> and <code>class</code>.
+            </p>
+            <p>
+                Here are examples of both:
+                <code>
+                    int age = 25;          // Value type<br>
+                    string name = "Alice"; // Reference type
+                </code>
+                Understanding these types is crucial for effective memory management and performance optimization in C# programming.
+            </p>
+        </section>
+
+        <section id="section-eleven" class="main-section">
+            <h1>If and Else Statements in C#</h1>
+            <p>
+                In C#, "if" and "else" statements are fundamental control structures that allow you to branch your code based on conditions. The "if" statement executes a block of code only if a specified condition evaluates to true. If the condition is false, you can use an optional "else" statement to execute a different block of code.
+            </p>
+            <code>
+                int score = 90;<br>
+                if (score >= 50) {<br>
+                    Console.WriteLine("You passed.");<br>
+                } else {<br>
+                    Console.WriteLine("You failed.");<br>
+                }
+            </code>
+            <p>
+                For more complex decisions, "else if" can be used to specify a new condition if the first test fails. This allows multiple checks within the same "if" statement structure. Each condition is checked in sequence until one is found to be true:
+            </p>
+            <code>
+                int temperature = 22;<br>
+                if (temperature > 25) {<br>
+                    Console.WriteLine("It's hot outside.");<br>
+                } else if (temperature > 15 && temperature <= 25) {<br>
+                    Console.WriteLine("It's warm outside.");<br>
+                } else {<br>
+                    Console.WriteLine("It's cold outside.");<br>
+                }
+            </code>
+            <p>
+                These statements are not only a staple in programming logic but are also widely used for making decisions in code. They help manage program flow based on dynamic conditions, enhancing interactivity and decision-making capabilities in applications. Proper use of "if" and "else" is crucial for handling user inputs, performing calculations, and responding to real-time data changes effectively.
+            </p>
+        </section>
+
+        <section id="section-twelve" class="main-section">
+            <h1>While Statements in C#</h1>
+            <p>
+                The "while" statement in C# is used to execute a block of code repeatedly as long as a specified condition remains true. This type of loop is crucial for tasks that require repetitive action until a particular condition changes, which may not be known in advance. The "while" loop checks the condition before executing the loop body, meaning the code inside the loop may not execute at all if the condition is false at the start.
+            </p>
+            <code>
+                int count = 1;<br>
+                while (count <= 5) {<br>
+                    Console.WriteLine("Count is " + count);<br>
+                    count++; // Increment count to avoid an infinite loop<br>
+                }
+            </code>
+            <p>
+                It's essential to modify the loop control variable within the loop to prevent creating an infinite loop, which occurs when the loop condition never becomes false. "While" loops are particularly useful for reading data until the end is reached, such as reading a file line by line or processing user input until a termination command is entered.
+            </p>
+            <p>
+                In C#, while loops provide a simple yet powerful tool for handling repetitive tasks with dynamic conditions. They help keep the code concise and readable, especially in scenarios where the number of iterations is not predetermined.
+            </p>
+        </section>
+
+        <section id="section-thirteen" class="main-section">
+            <h1>For Loops in C#</h1>
+            <p>
+                In C#, "for" loops provide a concise mechanism for iterating over a range or series of numbers, making them essential for tasks that require a definite number of iterations. This loop is typically used when the number of iterations is known before entering the loop. A "for" loop consists of three parts: initialization, condition, and iteration statement, all enclosed in parentheses and separated by semicolons.
+            </p>
+            <code>
+                for (int i = 0; i < 10; i++) {<br>
+                    Console.WriteLine("Loop iteration number: " + i);<br>
+                }
+            </code>
+            <p>
+                The initialization (`int i = 0;`) sets up the loop variable. The condition (`i < 10;`) determines how long the loop continues. The iteration statement (`i++;`) updates the loop variable after each iteration. When the condition fails, the loop exits and the program continues with the next line of code after the loop.
+            </p>
+            <p>
+                "For" loops are especially useful for iterating through arrays or collections and for implementing algorithms that require repetitive actions, such as sorting or searching. Their clear structure helps prevent errors related to loop control, making them a staple in C# programming.
+            </p>
+        </section>
+
+        <section id="section-fourteen" class="main-section">
+            <h1>Function Declarations in C#</h1>
+            <p>
+                In C#, functions, also known as methods, are blocks of code designed to perform a particular task. Each function declaration specifies the return type, a name, and parameters. A function can return a value, or be void if no value is returned. Declaring functions helps to organize and reuse code, enhance readability, and reduce complexity.
+            </p>
+            <code>
+                public int AddNumbers(int a, int b) {<br>
+                    return a + b;<br>
+                }
+            </code>
+            <p>
+                The above function, <code>AddNumbers</code>, takes two integer parameters and returns their sum. The visibility of this function is public, which means it can be accessed from other parts of the program. Function declarations in C# allow parameters to be strongly typed, which means each parameter's type must be declared.
+            </p>
+            <p>
+                Proper use of functions is essential for creating maintainable and modular code in C#. Understanding how to declare and utilize functions effectively forms a core part of C# programming proficiency.
+            </p>
+        </section>
+        <section id="section-fifteen" class="main-section">
+            <h1>Reference</h1>
+            <li>All the documentation in thig page is taken from <a href="https://www.w3schools.com/cs/index.php" target="_blank">W3Schools</a></li>
+        </section>
+    </main>
+</body>
+</html>
